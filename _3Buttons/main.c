@@ -64,24 +64,24 @@ void ProgramOne(void)
 {
 	 LED_turnOn(DIO_PORTC,PIN2);
 	 BUZZER_turnOn(DIO_PORTA,PIN3);
-	 _delay_ms(10000);
+	 _delay_ms(1000);
 	 LED_turnOff(DIO_PORTC,PIN2);
 	 BUZZER_turnOff(DIO_PORTA,PIN3);
-	 _delay_ms(5000);
+	 _delay_ms(500);
 
 	 LED_turnOn(DIO_PORTC,PIN7);
 	 BUZZER_turnOn(DIO_PORTA,PIN3);
-	 _delay_ms(10000);
+	 _delay_ms(1000);
 	 LED_turnOff(DIO_PORTC,PIN7);
 	 BUZZER_turnOff(DIO_PORTA,PIN3);
-	 _delay_ms(5000);
+	 _delay_ms(500);
 
 	 LED_turnOn(DIO_PORTD,PIN3);
 	 BUZZER_turnOn(DIO_PORTA,PIN3);
-	 _delay_ms(10000);
+	 _delay_ms(1000);
 	 LED_turnOff(DIO_PORTD,PIN3);
 	 BUZZER_turnOff(DIO_PORTA,PIN3);
-	 _delay_ms(5000);
+	 _delay_ms(500);
 
 }
 
