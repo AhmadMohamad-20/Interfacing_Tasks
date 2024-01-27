@@ -1,0 +1,26 @@
+DIO_INTERRUPT/DIO_INTERRUPT_Program.o \
+  DIO_INTERRUPT/DIO_INTERRUPT_Program.o:  \
+ ../DIO_INTERRUPT/DIO_INTERRUPT_Program.c \
+  ../DIO_INTERRUPT/../DIO/STD_Types.h ../DIO_INTERRUPT/../DIO/bitmath.h \
+  ../DIO_INTERRUPT/../DIO/DIO_Interface.h \
+  ../DIO_INTERRUPT/../General_Interrupts/GEN_INTERRUPT__Interacing.h \
+  ../DIO_INTERRUPT/DIO_INTERRUPT_CFG.h \
+  ../DIO_INTERRUPT/DIO_INTERRUPT__Reg.h \
+  ../DIO_INTERRUPT/DIO_INTERRUPT__Private.h \
+  ../DIO_INTERRUPT/DIO_INTERRUPT__Interacing.h
+
+../DIO_INTERRUPT/../DIO/STD_Types.h:
+
+../DIO_INTERRUPT/../DIO/bitmath.h:
+
+../DIO_INTERRUPT/../DIO/DIO_Interface.h:
+
+../DIO_INTERRUPT/../General_Interrupts/GEN_INTERRUPT__Interacing.h:
+
+../DIO_INTERRUPT/DIO_INTERRUPT_CFG.h:
+
+../DIO_INTERRUPT/DIO_INTERRUPT__Reg.h:
+
+../DIO_INTERRUPT/DIO_INTERRUPT__Private.h:
+
+../DIO_INTERRUPT/DIO_INTERRUPT__Interacing.h:

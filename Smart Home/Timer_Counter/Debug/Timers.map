@@ -1,0 +1,562 @@
+Archive member included because of file (symbol)
+
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./TIMER_Program.o (__mulsi3)
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./TIMER_Program.o (__udivmodsi4)
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./LED/LED_Program.o
+LOAD ./General_Interrupts/GEN_INTERRUPT__Program.o
+LOAD ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+LOAD ./DIO/DIO_Program.o
+LOAD ./TIMER_Program.o
+LOAD ./main.o
+LOAD d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x120c
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./LED/LED_Program.o
+ .text          0x0000007c        0x0 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .text          0x0000007c        0x0 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .text          0x0000007c        0x0 ./DIO/DIO_Program.o
+ .text          0x0000007c        0x0 ./TIMER_Program.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x0000007c        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000007c        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.LED_turnOn
+                0x0000007c       0x2e ./LED/LED_Program.o
+                0x0000007c                LED_turnOn
+ .text.LED_turnOff
+                0x000000aa       0x2e ./LED/LED_Program.o
+                0x000000aa                LED_turnOff
+ .text.LED_toggle
+                0x000000d8       0x2c ./LED/LED_Program.o
+                0x000000d8                LED_toggle
+ .text.GENERAL_INTERRUPT_enableInterrupt
+                0x00000104       0x1c ./General_Interrupts/GEN_INTERRUPT__Program.o
+                0x00000104                GENERAL_INTERRUPT_enableInterrupt
+ .text.GENERAL_INTERRUPT_disableInterrupt
+                0x00000120       0x1c ./General_Interrupts/GEN_INTERRUPT__Program.o
+                0x00000120                GENERAL_INTERRUPT_disableInterrupt
+ .text.DIO_INTERRUPT_callBack
+                0x0000013c       0x24 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x0000013c                DIO_INTERRUPT_callBack
+ .text.DIO_INTERRUPT_enableINT0
+                0x00000160       0x42 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x00000160                DIO_INTERRUPT_enableINT0
+ .text.DIO_INTERRUPT_enableINT1
+                0x000001a2       0x3c ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x000001a2                DIO_INTERRUPT_enableINT1
+ .text.DIO_INTERRUPT_enableINT2
+                0x000001de       0x2e ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x000001de                DIO_INTERRUPT_enableINT2
+ .text.__vector_1
+                0x0000020c       0x5a ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x0000020c                __vector_1
+ .text.__vector_2
+                0x00000266       0x20 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x00000266                __vector_2
+ .text.__vector_3
+                0x00000286       0x20 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x00000286                __vector_3
+ .text.DIO_setPinDirection
+                0x000002a6      0x21e ./DIO/DIO_Program.o
+                0x000002a6                DIO_setPinDirection
+ .text.DIO_setPinValue
+                0x000004c4      0x21e ./DIO/DIO_Program.o
+                0x000004c4                DIO_setPinValue
+ .text.DIO_ReadPinValue
+                0x000006e2      0x12e ./DIO/DIO_Program.o
+                0x000006e2                DIO_ReadPinValue
+ .text.DIO_togglePinValue
+                0x00000810      0x108 ./DIO/DIO_Program.o
+                0x00000810                DIO_togglePinValue
+ .text.DIO_setPortDirection
+                0x00000918       0x9c ./DIO/DIO_Program.o
+                0x00000918                DIO_setPortDirection
+ .text.DIO_setPortValue
+                0x000009b4       0x90 ./DIO/DIO_Program.o
+                0x000009b4                DIO_setPortValue
+ .text.DIO_ReadPortValue
+                0x00000a44       0xb4 ./DIO/DIO_Program.o
+                0x00000a44                DIO_ReadPortValue
+ .text.DIO_setIntPullUpRes
+                0x00000af8       0x40 ./DIO/DIO_Program.o
+                0x00000af8                DIO_setIntPullUpRes
+ .text.TIMER0_init
+                0x00000b38       0x88 ./TIMER_Program.o
+                0x00000b38                TIMER0_init
+ .text.TIMER1_init
+                0x00000bc0       0xa0 ./TIMER_Program.o
+                0x00000bc0                TIMER1_init
+ .text.TIMER1_normal
+                0x00000c60       0x88 ./TIMER_Program.o
+                0x00000c60                TIMER1_normal
+ .text.TIMER1_CTC
+                0x00000ce8       0x5a ./TIMER_Program.o
+                0x00000ce8                TIMER1_CTC
+ .text.TIMER1_fastPWM
+                0x00000d42       0xa0 ./TIMER_Program.o
+                0x00000d42                TIMER1_fastPWM
+ .text.TIMER1_phaseCorrectPWM
+                0x00000de2       0x34 ./TIMER_Program.o
+                0x00000de2                TIMER1_phaseCorrectPWM
+ .text.TIMER2_init
+                0x00000e16       0x58 ./TIMER_Program.o
+                0x00000e16                TIMER2_init
+ .text.TIMER2_normal
+                0x00000e6e       0x62 ./TIMER_Program.o
+                0x00000e6e                TIMER2_normal
+ .text.TIMER2_CTC_
+                0x00000ed0       0x70 ./TIMER_Program.o
+                0x00000ed0                TIMER2_CTC_
+ .text.TIMER2_fastPWM
+                0x00000f40       0x7a ./TIMER_Program.o
+                0x00000f40                TIMER2_fastPWM
+ .text.TIMER2_phaseCorrectPWM
+                0x00000fba       0x7a ./TIMER_Program.o
+                0x00000fba                TIMER2_phaseCorrectPWM
+ .text.Delay_ms
+                0x00001034       0xc0 ./TIMER_Program.o
+                0x00001034                Delay_ms
+ .text.main     0x000010f4       0x28 ./main.o
+                0x000010f4                main
+ .text.ISR_EXTINT0
+                0x0000111c       0x6a ./main.o
+                0x0000111c                ISR_EXTINT0
+ .text.libgcc   0x00001186       0x3e d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00001186                __mulsi3
+ .text.libgcc   0x000011c4       0x44 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000011c4                __udivmodsi4
+ .text.libgcc   0x00001208        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001208        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001208                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001208        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001208                exit
+                0x00001208                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001208        0x4 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000120c                _etext = .
+
+.data           0x00800060        0x0 load address 0x0000120c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./LED/LED_Program.o
+ .data          0x00800060        0x0 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .data          0x00800060        0x0 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .data          0x00800060        0x0 ./DIO/DIO_Program.o
+ .data          0x00800060        0x0 ./TIMER_Program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x8
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./LED/LED_Program.o
+ .bss           0x00800060        0x0 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .bss           0x00800060        0x0 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .bss           0x00800060        0x0 ./DIO/DIO_Program.o
+ .bss           0x00800060        0x0 ./TIMER_Program.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 d:/courses/embedded systems/amit/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.EXTINT0   0x00800060        0x2 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                0x00800060                EXTINT0
+ .bss.counter   0x00800062        0x1 ./main.o
+                0x00800062                counter
+ .bss.value     0x00800063        0x1 ./main.o
+                0x00800063                value
+ .bss.flag.1337
+                0x00800064        0x1 ./main.o
+ .bss.T3.1336   0x00800065        0x1 ./main.o
+ .bss.T2.1335   0x00800066        0x1 ./main.o
+ .bss.T1.1334   0x00800067        0x1 ./main.o
+ *(COMMON)
+                0x00800068                PROVIDE (__bss_end, .)
+                0x0000120c                __data_load_start = LOADADDR (.data)
+                0x0000120c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800068        0x0
+                0x00800068                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800068                PROVIDE (__noinit_end, .)
+                0x00800068                _end = .
+                0x00800068                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 ./LED/LED_Program.o
+ .debug_aranges
+                0x00000030       0x28 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_aranges
+                0x00000058       0x50 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_aranges
+                0x000000a8       0x58 ./DIO/DIO_Program.o
+ .debug_aranges
+                0x00000100       0x78 ./TIMER_Program.o
+ .debug_aranges
+                0x00000178       0x28 ./main.o
+
+.debug_pubnames
+                0x00000000      0x351
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x40 ./LED/LED_Program.o
+ .debug_pubnames
+                0x00000040       0x5f ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_pubnames
+                0x0000009f       0xbd ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_pubnames
+                0x0000015c       0xc6 ./DIO/DIO_Program.o
+ .debug_pubnames
+                0x00000222       0xee ./TIMER_Program.o
+ .debug_pubnames
+                0x00000310       0x41 ./main.o
+
+.debug_info     0x00000000      0x8f6
+ *(.debug_info)
+ .debug_info    0x00000000      0x142 ./LED/LED_Program.o
+ .debug_info    0x00000142       0x8c ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_info    0x000001ce      0x13b ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_info    0x00000309      0x2d9 ./DIO/DIO_Program.o
+ .debug_info    0x000005e2      0x1ff ./TIMER_Program.o
+ .debug_info    0x000007e1      0x115 ./main.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x334
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x7e ./LED/LED_Program.o
+ .debug_abbrev  0x0000007e       0x36 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_abbrev  0x000000b4       0x9f ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_abbrev  0x00000153       0xa5 ./DIO/DIO_Program.o
+ .debug_abbrev  0x000001f8       0xa4 ./TIMER_Program.o
+ .debug_abbrev  0x0000029c       0x98 ./main.o
+
+.debug_line     0x00000000     0x11f9
+ *(.debug_line)
+ .debug_line    0x00000000      0x167 ./LED/LED_Program.o
+ .debug_line    0x00000167      0x180 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_line    0x000002e7      0x2aa ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_line    0x00000591      0x43e ./DIO/DIO_Program.o
+ .debug_line    0x000009cf      0x53e ./TIMER_Program.o
+ .debug_line    0x00000f0d      0x2ec ./main.o
+
+.debug_frame    0x00000000      0x280
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x40 ./LED/LED_Program.o
+ .debug_frame   0x00000040       0x30 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_frame   0x00000070       0x80 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_frame   0x000000f0       0x90 ./DIO/DIO_Program.o
+ .debug_frame   0x00000180       0xd0 ./TIMER_Program.o
+ .debug_frame   0x00000250       0x30 ./main.o
+
+.debug_str      0x00000000      0x493
+ *(.debug_str)
+ .debug_str     0x00000000      0x11b ./LED/LED_Program.o
+                                0x142 (size before relaxing)
+ .debug_str     0x0000011b       0x74 ./General_Interrupts/GEN_INTERRUPT__Program.o
+                                0x14c (size before relaxing)
+ .debug_str     0x0000018f       0xcb ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+                                0x1b1 (size before relaxing)
+ .debug_str     0x0000025a      0x107 ./DIO/DIO_Program.o
+                                0x1f7 (size before relaxing)
+ .debug_str     0x00000361      0x10a ./TIMER_Program.o
+                                0x1e8 (size before relaxing)
+ .debug_str     0x0000046b       0x28 ./main.o
+                                0x119 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo  0x00000000     0x9032
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000      0xe28 ./LED/LED_Program.o
+ .debug_macinfo
+                0x00000e28      0xe8e ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_macinfo
+                0x00001cb6     0x1059 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_macinfo
+                0x00002d0f      0xf7c ./DIO/DIO_Program.o
+ .debug_macinfo
+                0x00003c8b     0x2237 ./TIMER_Program.o
+ .debug_macinfo
+                0x00005ec2     0x3170 ./main.o
+OUTPUT(Timers.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x170
+ .debug_ranges  0x00000000       0x28 ./LED/LED_Program.o
+ .debug_ranges  0x00000028       0x20 ./General_Interrupts/GEN_INTERRUPT__Program.o
+ .debug_ranges  0x00000048       0x48 ./DIO_INTERRUPT/DIO_INTERRUPT_Program.o
+ .debug_ranges  0x00000090       0x50 ./DIO/DIO_Program.o
+ .debug_ranges  0x000000e0       0x70 ./TIMER_Program.o
+ .debug_ranges  0x00000150       0x20 ./main.o
